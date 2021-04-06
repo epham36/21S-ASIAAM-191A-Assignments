@@ -1,12 +1,16 @@
-## Due Thursday 4/8:
+## Emily Pham, Lab 1 
 
-1.  Calculate a new field using already existing fields in the `CA_Counties_2019.shp` dataset or another dataset of your choosing.
+## 1. Fields used
+For this assignment, I created the field "ASIAN_PERC" (referring to the percentage of Asian people in each county) by dividing the value of the field "ASIAN_POP" by the field "TOTAL_POP" and multiplying by 100, in order to find the proportion of Asian people relative to the population as a whole.
 
-2. Create a geojson named `lab1.geojson` and add it to your repository.
+## 2. Explanation of field choice
+Having grown up in ethnoburbs in the San Gabriel Valley with significant Asian American populations, I was very curious to quantify the relative populations of Asian Americans in the various counties of California. Looking at where the distribution of Asian Americans is the highest, it appears that there are two hubs that have counties with the most significant Asian American populations: one in the Northern California/Bay Area and in the coastal regions of Southern California. 
 
-3. Create a new markdown file called `lab1.md` and explain the following:
-   -  What fields you used
-   -  Why you used these fields
-   -  What problems could the data set have
-4. Commit both `lab1.geojson` and `lab1.md` to your repository and push it to GitHub.
-5. Fill out this form so I can associate you with your GitHub repo: [https://forms.gle/J8kebeHEd5xbGaiRA](https://forms.gle/J8kebeHEd5xbGaiRA)
+The geographic distribution of communities has long been a source of fascination to me -- not just noticing where there are significant communities of Asian Americans and where racial/ethnic identities are the most strongly identified -- but also questioning the settlement patterns of people to these regions. 
+
+These centers with heightened Asian populations are remnants of racial capitalism and imperialism. I personally had not realized that it was the Santa Clara, San Francisco, Alameda, and San Mateo Counties that had the greatest proportion of Asian residents. However, to consider the location of Silicon Valley industries and manufacturing plants in this region -- and the racialization of Southeast Asian women to be dextrous and docile -- histories of racial capitalism and technological advancement collide. That is also not to mention the historic settlements of Chinese laborers and railroad workers as well. It is this intersection of decolonial history and geography that I find incredibly exciting, especially in understanding the diaspora of different East Asian and Southeast Asian groups. 
+
+## 3. Potential problems of data set
+There are always challenges that come with capturing racial data and itemzing or enumerating social identities that are constantly being renegotiated by social/race interactions. As racial data is typicaly self-reported, different perceptions of race or self-identification with a racial identity by survey subjects may not necessarily be the same way which race is understood by those analyzing or interpreting this data. 
+
+Moreover, depending on how racial data was captured in this survey, there may be people whose racial identity were not adequately represented. For one, any people who identified as mixed race (who may be of Asian and white descent, or Asian and Black descent, etc.) may possibly not be captured under Asian or White or Black. Hence, capturing the amount of people who are mixed race would be good when we are concerned with people of mixed descent, but in this case -- when focusing on Asian populations as a whole, this measure may contribute to deviation when analyzing or visualizing data.
