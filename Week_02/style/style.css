@@ -1,0 +1,50 @@
+html, body {
+    padding: 5px;
+ }
+
+ body {
+     display: grid;
+     grid-template-rows: .1fr .30fr .60fr .05fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: "header" "main" "map"  "footer";
+     justify-content: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    justify-content: center;
+ }
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: burlywood;
+}
+    
+#map {
+    grid-area: map;
+    height: 50vh;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+
+.parent {
+    display: flex;
+    align-items: center;
+}
+ .parent > div { 
+     flex: 2; 
+ } 
+
+.right {background-color: beige;
+}
+.left {background-color: rgb(216, 186, 157);
+    margin-right: 15%;
+    margin-left: 2%;
+}
