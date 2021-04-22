@@ -32,7 +32,7 @@ function createButtons(lat,lng,title){
     document.body.appendChild(newButton); //this adds the button to our page.
 }
 
-// use our marker functions!!
+// use our marker functions
 addMarker(37.20,-112.98,'Zion National Park','Winter 2018/19')
 addMarker(32,-118,'work','where i work land!')
 addMarker(39,-119,'location 1','random location')
