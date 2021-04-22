@@ -34,6 +34,6 @@ function createButtons(lat,lng,title){
 
 // use our marker functions
 addMarker(37.20,-112.98,'Zion National Park','Winter 2018/19')
-addMarker(32,-118,'work','where i work land!')
-addMarker(39,-119,'location 1','random location')
-addMarker(36,-120,'location 2','another random location')
+addMarker(38.73,-109.59,'Arches National Park','Winter 2018/2019')
+addMarker(36.48,-118.56,'Sequoia National Park','Winter 2017/2018')
+addMarker(38.27,-120.30,'Calaveras Big Trees State Park','Winter 2017/2018')
