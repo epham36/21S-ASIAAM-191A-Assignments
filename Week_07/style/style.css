@@ -1,0 +1,62 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: .1fr .6fr .05fr; /* add rows for our header/footer */
+    grid-template-areas: "header header header" "contentspanel mappanel survey" "footer footer footer" ;
+    background-color: cadetblue;
+}
+
+#map{
+    height:75vh;
+    grid-area: mappanel;
+} 
+
+
+#survey {
+    grid-area: survey;
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 0%;
+    position: relative;
+}
+
+#survey iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+#survey iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+#contents{
+    grid-area: contentspanel;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    font-weight: bold;
+    font-size:larger;
+    padding-top:0.5cm;
+    color: beige;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-weight: bold;
+    font-size:larger;
+    padding-top:0.5cm;
+    color: beige;
+}
