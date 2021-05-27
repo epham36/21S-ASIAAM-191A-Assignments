@@ -1,0 +1,182 @@
+body{
+    background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/IGP5374.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 4fr 4.5fr 4fr 3fr; /* add rows for our header/footer */
+    grid-template-areas: "header header header header" "logo1 club1 clublink1 clublink1" "logo2 club2 clublink2 clublink2" "logo3 club3 clublink3 clublink3" "footer footer footer footer"
+
+   }
+  
+ header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgba(255,255,255,0.75);
+    font-weight: bolder;
+    margin: 8px;
+ }
+  
+ .left1{
+   display:flex;
+   width: 69%;
+   margin: 8px;
+   justify-content: center;
+   border-style: dotted;
+   font-size: larger;
+   padding: 7px;
+ }
+
+ .left1 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .left1 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ .left2{
+   display:flex;
+   width: 69%;
+   margin: 8px;
+   justify-content: center;
+   border-style: dotted;
+   font-size: larger;
+   padding: 7px;
+ }
+
+ .left2 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .left2 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ .right1{
+   display:flex;
+   width: 69%;
+   margin: 8px;
+   justify-content: center;
+   border-style: dotted;
+   font-size: larger;
+   padding: 7px;
+ }
+
+ .right1 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .right1 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ .right2{
+   display:flex;
+   width: 69%;
+   margin: 8px;
+   justify-content: center;
+   border-style: dotted;
+   font-size: larger;
+   padding: 7px;
+ }
+
+ .right2 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .right2 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+
+  
+ footer{
+    grid-area: footer;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+ }
+
+ #club1{
+   grid-area: club1;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo1{
+   grid-area: logo1;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ #clublink1{
+    grid-column: 3 / 4;
+    grid-area: clublink1;
+    grid-row: span 1;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ #club2{
+   grid-area: club2;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo2{
+   grid-area: logo2;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  #clublink2{
+   grid-column: 3 / 4;
+   grid-area: clublink2;
+   display: flex;
+   padding: 20px;
+   margin: 10px;
+   background-color: rgba(255,255,255,0.4);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+
+#club3{
+   grid-area: club3;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo3{
+   grid-area: logo3;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clublink3{
+   grid-column: 3 / 4;
+   grid-area: clublink3;
+   display: flex;
+   padding: 20px;
+   margin: 10px;
+   background-color: rgba(255,255,255,0.4);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+

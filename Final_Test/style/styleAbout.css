@@ -1,0 +1,173 @@
+body{
+    background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/IGP5374.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 3fr 2fr 1.5fr 1fr; /* add rows for our header/footer */
+    grid-template-areas: "header header header header" "name1 about1 about1 about1" "name2 about2 about2 about2" "surveylink pitch pitch pitch " "footer footer footer footer"
+
+   }
+  
+ header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255,255,255,0.75);
+    font-weight: bolder;
+    margin: 8px;
+ }
+
+ .left1{
+    display:flex;
+    width: 69%;
+    margin: 8px;
+    justify-content: center;
+    border-style: dotted;
+    font-size: larger;
+    padding: 7px;
+ }
+
+ .left1 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .left1 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ .left2{
+    display:flex;
+    width: 69%;
+    margin: 8px;
+    justify-content: center;
+    border-style: dotted;
+    font-size: larger;
+    padding: 7px;
+ }
+
+ .left2 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .left2 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ .right1{
+    display:flex;
+    width: 69%;
+    margin: 8px;
+    justify-content: center;
+    border-style: dotted;
+    font-size: larger;
+    padding: 7px;
+ }
+
+ .right1 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .right1 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+
+  
+ .right2{
+    display:flex;
+    width: 69%;
+    margin: 8px;
+    justify-content: center;
+    border-style: dotted;
+    font-size: larger;
+    padding: 7px;
+ }
+
+ .right2 a:link, a:visited {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .right2 a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+ }
+  
+ footer{
+    grid-area: footer;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+ }
+
+ #name1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* #name1 a {
+   color: blue;
+} */
+
+ #about1{
+    grid-column: 2 / 4;
+    grid-area: about1;
+    grid-row: span 1;
+    display: flex;
+    padding: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #name2{
+   grid-area: name2;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+  #about2{
+   grid-column: 2 / 4;
+   grid-area: about2;
+   display: flex;
+   padding: 20px;
+   padding: 20px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+#pitch{
+   grid-column: 2 / 4;
+   grid-area: pitch;
+   display: flex;
+   padding: 20px;
+   padding: 20px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#surveylink{
+   grid-area: surveylink;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* #surveylink a{
+   color: blue;
+} */

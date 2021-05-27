@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>UCLA Resources for Southeast Asian Students</title>
+       <meta charset="utf-8" />
+       <link rel="shortcut icon" href="#">
+       <link rel="stylesheet" href="style/styleSEAsources.css">
+ 
+       <!-- Leaflet's css-->
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+ 
+       <!-- Leaflet's JavaScript-->
+       <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+   </head>
+  
+   <body>
+       <header>
+           <div class="left1"> <a href="index.html"> Main Page </a> </div>
+           <div class="left2"> <a href="About.html"> About </a> </div>
+           <div class="right1"> <a href="SEAsources.html"> SEAsources </a> </div>
+           <div class="right2"> <a href="ContactUs.html"> Contact Us </a> </div>
+       </header>
+       <div id="logo1">
+        <img src="data:image/png;base64,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" alt="SEA CLEAR Logo" 
+        height = "200px"
+        class="center">
+       </div>
+       <div id="club1">
+           <a href="https://vsubruins.com/seaclear"> <h2 style="text-align:center">Southeast Asian Campus Learning Education and Retention (SEA CLEAR)</h2> </a>
+       </div>
+       <div id="clublink1">
+            <br>   
+            SEA CLEAR is a program established by the UCLA's Vietnamese Student Union in 1998
+            to represent Southeast Asian students and educate them about Southeast Asian community issues.
+           <br>
+           <br>
+           Through five different components (Peer Counseling, Mentorship, Internship, Wellness, and Transfer), 
+           SEA CLEAR stresses holistic growth to increase graduation and retention rates in the historically
+           under-represented Southeast Asian community.
+
+       </div>
+       <!-- <div id="blank1"></div> -->
+
+       <div id="logo2">
+           <img src="https://spearatucla.weebly.com/uploads/1/3/3/1/133142750/editor/unnamed-1.png?1600356850" 
+           alt="SPEAR at UCLA" 
+           height = "200px"
+           class="center"></div>
+       <div id="club2">
+           <a href="https://spearatucla.weebly.com/"> <h2 style="text-align:center">Samahang Pilipino Education and Retention (SPEAR)</h2> </a>
+       </div>
+
+       <div id="clublink2">            
+           SPEAR was formed in 1988 as one of the first three CRC (Campus Retention Committee) retention projects 
+        in reaction to UCLA’s removal of Pilipinxs from Affirmative Action, the anticipated drop of Pilipinx 
+        admission rates, and discontent with UCLA's ability to address our retention needs.  SPEAR uses a holistic 
+        approach that identifies Pilipinx identity, community, and the cultural standards of success as factors in 
+        Pilipinx retention rates.  Thus, SPEAR emphasizes the need for “bayanihan” where students support other students 
+        in redefining our education and succeeding at the university level.</div>
+
+
+       <!-- <div id="blank2"></div> -->
+
+
+       <div id="logo3">
+            <img src="https://yt3.ggpht.com/ytc/AAUvwnjxFYpOFXaXgP-mDu2LD6BGtvcKiExg8jbB39ma=s900-c-k-c0x00ffffff-no-rj" alt="AAP Logo" 
+            class="center"
+            height= "200px">
+        </div>
+       </div>
+       <div id="club3">
+            <a href="https://www.aap.ucla.edu/"> <h2 style="text-align:center">Academic Advancement Program (AAP)</h2> </a>
+       </div>
+       <div id="clublink3">
+           AAP is UCLA's student diversity program, which provides services to students who are 
+           historically underserved in higher education, such as first-gen students, recent 
+           immigrants, or come from minoritized racial/ethnic groups. 
+           <br> 
+           <br>
+           AAP provides services such as college counseling, peer learning, preparation for advanced degrees,
+
+       </div>
+       
+      
+        <!--Insert JS script for the websites here-->
+       <script src="js/jsOrg.js">
+      
+       </script>
+   </body>
+</html>
